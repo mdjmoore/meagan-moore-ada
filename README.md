@@ -6,6 +6,8 @@ For **Challenge 2** I would first regex any incoming input to prevent a user fro
 
 For **Challenge 3** I would again use regex to grab the text that is between the parentheses and then split that value on the pipe to get the variable and the fallback value. As far as rendering it, I found the attached image didn't answer lingering questions I had about how to render the variable. I would render a string of `fallback value` (the string after the pipe) and then render the id of the variable in a coloured pill with a tooltip that displayed on hover or click.
 
+---
+## Instructions:
 ### Challenge 1
 
 Build a frontend component that displays information from the /nodes endpoint according to the specification outlined in the design documents.
