@@ -1,72 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Meagan More Ada Tech Challenge
 
-## Available Scripts
+I've left notes in specific files about the code written within (Sidebar, Details, Accordion) and will adress the parts of the challenge I was not able to complete here.
 
-In the project directory, you can run:
+For **Challenge 2** I would first regex any incoming input to prevent a user from entering scripts that could be harmful to the application. Once the input values were cleaned, I would take that value and pass it to the Details component. From there, I would filter through the cards and the text within to find a match to the entered term then wrap any matching strings in a span so they could be targeted with css to show a user a match had been found.
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
+For **Challenge 3** I would again use regex to grab the text that is between the parentheses and then split that value on the pipe to get the variable and the fallback value. As far as rendering it, I found the attached image didn't answer lingering questions I had about how to render the variable. I would render a string of `fallback value` (the string after the pipe) and then render the id of the variable in a coloured pill with a tooltip that displayed on hover or click.
 
 ### Challenge 1
 
@@ -95,5 +33,3 @@ Build an interactive frontend component that renders the content using template 
 Variables are represented inside of `node` content as a template string `{<idOfTheVariable>|a fallback value}`
 
 When displaying a variable, make sure to show that it's a variable value. In the image below, we can see how the variables should look embedded in text.
-
-![variable pill](resources/variable-pill-example.png)

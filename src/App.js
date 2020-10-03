@@ -1,7 +1,11 @@
 import React from 'react';
+import axios from 'axios';
 import Sidebar from './components/sidebar/Sidebar';
+import Details from './components/details/Details';
+import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +14,7 @@ function App() {
         </h1>
       </header>
       <Sidebar />
+      <Details />
     </div>
   );
 }
